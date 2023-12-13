@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Web Page using Bootstrap</title>
+</head>
+<body>
+  <!--Nav bar start-->
+  <nav class="navbar navbar-expand navbar-dark bg-success">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#404">GeeksForGeeks</a>
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--Nav Links-->
+        <li class="nav-item">
+          <a class="nav-link active" href="">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="">Contact</a>
+        </li>
+
+        <!--Drop down-->
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Articles</a>
+
+
+          <!--Dropdown options-->
+          <ul class="dropdown-menu">
+            
+            <li><a class="dropdown-item" href="">Page 1</a></li>
+
+            <li><a class="dropdown-item" href="">Page 2</a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search"/>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+
+
+    </div>
+  </nav>
+  
+
+  <!--Article-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-2">Author Name</div>
+      <div class="col-sm-8">
+        <h2>Heading for Article</h2>
+        <h5>Created using Bootstrap</h5>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam accusamus delectus dicta ea ex, necessitatibus possimus itaque! Eum, excepturi labore voluptatum nostrum vero nihil enim officia nam accusamus fugiat atque!
+          Expedita laborum, animi doloribus beatae, quam quibusdam tempore, provident voluptates fuga optio similique officia nobis repellendus facere ullam tenetur architecto ratione quo? Hic, ipsa! Quia quisquam maxime unde cum non?
+          Culpa ab eius, dicta optio iste corporis, sapiente porro, cum sed accusantium odit esse omnis suscipit adipisci consequatur assumenda id? Officiis sunt, atque eius veritatis totam expedita magni excepturi libero.
+        </p>
+      </div>
+
+    </div>
+
+    <!--FORMS-->
+    <form class="was-validated">
+      <!--email-->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        <div class="valid-feedback">Email is valid</div>
+        <div class="invalid-feedback" > Please fill out</div>
+      </div>
+      <!--password-->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" minlength="8" required>
+        <div class="form-text" id="password-help-block">Password must be 8 characters</div>
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">Invalid passkey</div>
+      </div>
+
+      <!--Check Box-->
+      <div class="form-check" mb-3>
+        <input type="checkbox" class="form-check-input" id="checkbox" required>
+        <label for="checkbox" class="form-check-label">I agree</label>
+        <div class="valid-feedback">You agree T&C</div>
+        <div class="invalid-feedback">Please agree T&C to continue</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
